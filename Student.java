@@ -1,15 +1,41 @@
 package com;
 
 public class Student {
-private int id;
+private String address;
+private int age;
+private String emailId;
 private String name;
-private byte age;
-private String city;
-public int getId() {
-	return id;
+private String qualification;
+private String sex;
+
+Student(){
+	
 }
-public void setId(int id) {
-	this.id = id;
+Student(String address,int age,String emailId,String name,String qualification,String sex){
+	this.address=address;
+	this.age=age;
+	this.emailId=emailId;
+	this.name=name;
+	this.qualification=qualification;
+	this.sex=sex;
+}
+public String getAddress() {
+	return address;
+}
+public void setAddress(String address) {
+	this.address = address;
+}
+public int getAge() {
+	return age;
+}
+public void setAge(int age) {
+	this.age = age;
+}
+public String getEmailId() {
+	return emailId;
+}
+public void setEmailId(String emailId) {
+	this.emailId = emailId;
 }
 public String getName() {
 	return name;
@@ -17,17 +43,17 @@ public String getName() {
 public void setName(String name) {
 	this.name = name;
 }
-public byte getAge() {
-	return age;
+public String getQualification() {
+	return qualification;
 }
-public void setAge(byte age) {
-	this.age = age;
+public void setQualification(String qualification) {
+	this.qualification = qualification;
 }
-public String getCity() {
-	return city;
+public String getSex() {
+	return sex;
 }
-public void setCity(String city) {
-	this.city = city;
+public void setSex(String sex) {
+	this.sex = sex;
 }
 
 }
