@@ -1,6 +1,6 @@
 package com;
 
-public abstract class Employee {
+public abstract class Employee implements Comparable<Employee>{
 	private int empId;
 	private String name ;
 	private double basicPay;
@@ -40,6 +40,16 @@ public abstract class Employee {
 	public double getPerksPay() {
 		return perksPay;
 	}
+	public int compareTo(Employee e) {
+		if(this.getEmpId()>e.getEmpId())
+			return 1;
+		else if(this.getEmpId()==e.getEmpId())
+			return 0;
+		else if(this.getEmpId()<e.getEmpId())
+			return -1;
+		return empId;
+	}
+
 
 	public void setPerksPay(double perksPay) {
 		this.perksPay = perksPay;

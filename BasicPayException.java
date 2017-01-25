@@ -2,7 +2,7 @@ package com;
 
 public class BasicPayException extends Exception {
 
-//private static final long serialVersionUID = 1L;
+private static final long serialVersionUID = 1L;
 private double basicSalary;
 
 public BasicPayException(double basicSalary){
@@ -11,8 +11,8 @@ public BasicPayException(double basicSalary){
 
 public String getMessage(){
 	
-	
-	return null;
+	String bs=""+basicSalary;
+	return bs;
 	
 }
 
